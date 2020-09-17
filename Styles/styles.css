@@ -55,6 +55,7 @@ figure {
 
 
 .container-menu {
+    max-width: 100%;
     border-bottom: 1px solid #c5c5c5;
     width: 100%;
     height: 60px;
@@ -65,14 +66,22 @@ figure {
     position: fixed;
 }
 
+.logo {
+    width: 50%;
+    
+}
+
 #menu {
     display: flex;
     justify-content: space-around;
     width: 50%;
+    
     /*min-width: 30%;*/
 }
 #menu li{
+    
     list-style: none;
+    margin: 0;
     /*width: 50%;*/
 }
 #menu li a{
@@ -468,7 +477,17 @@ footer{
 /*Responsive*/
 
 @media screen and (max-width: 1024px) {
+    .logo{
+        width: 30%;
+        margin: 0;
+    }
 
+    .menu {
+        width: 40%;
+    }
+    .back-title {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -478,8 +497,14 @@ footer{
     .n2 {
         display: none;
     }
+    .logo{
+        width: 30%;
+    }
+    .menu {
+        width: 40%;
+    }
     .back-title {
-        font-size: 200px;
+        display: none;
     }
     #About-service {
         height: auto;
@@ -488,6 +513,9 @@ footer{
     .container-aboutService 
     {
         display: block;
+    }
+    .card {
+        margin-left: 30%;
     }
     .step {
         margin-left: 25%;
@@ -510,11 +538,61 @@ footer{
         border-bottom: 2px solid white;
         padding-bottom: 10px;
     }
+    .step h4 {
+        padding-top: 35px;
+    }
 }
 
 @media screen and (max-width: 480px) {
+    .card {
+        margin-left: 20%;
+    }
+    .step {
+        margin-left: 15%;
+        
+    }
+    .card-plans {
+        
+        margin-left: 15%;
+    }
+    
+}
+@media screen and (max-width: 350px) {
+    .card {
+        margin-left: 12%;
+    }
+    .step {
+        margin-left: 5%;
+        
+    }
+    .card-plans {
+        
+        margin-left: 5%;
+    }
 }
 
 @media screen and (max-width: 320px) {
-
+    .card {
+        margin-left: 10%;
+    }
+    .step {
+        margin-left: 2%;
+        
+    }
+    .card-plans {
+        
+        margin-left: 2%;
+    }
+    .hero-image {
+        position: absolute;
+        z-index: -1;
+        opacity: 0.5;
+        width: 100%;
+    }
+    .title {
+        width: 100%;
+    }
+    #menu li a{
+        font-size: 10px;
+    }
 }
