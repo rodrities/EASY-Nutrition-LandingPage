@@ -206,6 +206,7 @@ figure {
 }
 
 #About-service h3 {
+    height: auto;
     color: #A1A294;
 }
 .container-aboutService{
@@ -235,6 +236,8 @@ figure {
     margin:7% 11%;
     text-align: left;
 }
+
+
 
 .circle {
     z-index: 0;
@@ -267,6 +270,13 @@ figure {
 
 .step3 {
     background: #DFF9D9;
+}
+
+#video {
+    background-color: white;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
 
 #Plans {
